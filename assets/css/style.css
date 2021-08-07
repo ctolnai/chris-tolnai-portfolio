@@ -1,3 +1,58 @@
+:root {
+    --backgroundcolor: #FEFEFE;
+    --headercolor: #F4F4F4;
+    --fontcolor: #1A1A1A;
+}
+
 body {
-    background-color: ;
+    background-color: var(--headercolor);
+    color: var(--fontcolor);
+    font-family: helvetica neue;
+    font-weight:300
+    /* #F4F4F4 */
+
+}
+
+main {
+    background-color: var(--backgroundcolor);
+}
+
+h1 {
+    font-weight:300;
+    font-size: 500%;
+}
+
+.nav {
+    width: 100%;
+    background-color:var(--headercolor);
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text-left {
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.text-right {
+    text-align: right;
+    align-items: center;
+    line-height: 2;
+    margin-right: 10px;
+    font-size: 125%;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--fontcolor);
+}
+
+li {
+    list-style-type:none;
 }
