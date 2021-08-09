@@ -5,12 +5,17 @@
 }
 
 body {
-    background-color: var(--headercolor);
     color: var(--fontcolor);
     font-family: helvetica neue;
     font-weight:300
     /* #F4F4F4 */
 
+}
+header {
+    background-color: var(--headercolor);
+    border-color: var(--fontcolor);
+    border-bottom: 3px solid;
+    z-index: 1;
 }
 
 main {
