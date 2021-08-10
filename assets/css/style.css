@@ -22,11 +22,40 @@ main {
     background-color: var(--backgroundcolor);
 }
 
+aside{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--headercolor);
+    border-color: var(--fontcolor);
+    border-top: 3px solid;
+}
+
 h1 {
     font-weight:300;
     font-size: 500%;
 }
 
+h2 {
+    font-weight: 300;
+    font-size: 200%;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 18px;
+}
 .nav {
     width: 100%;
     background-color:var(--headercolor);
@@ -45,11 +74,12 @@ h1 {
 }
 
 .text-right {
-    text-align: right;
     align-items: center;
     line-height: 2;
-    margin-right: 10px;
     font-size: 125%;
+    position: relative;
+    right: 50px;
+    width: 150px;
 
 }
 
@@ -62,6 +92,61 @@ li {
     list-style-type:none;
 }
 
+.about-me {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.about-me h2 {
+    width: 200px;
+    margin:10px;
+    padding: 10px;
+}
+
+.about-me p {
+    flex: wrap;
+}
+
+.my-work {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.my-work h2 {
+    width: 200px;
+    margin:10px;
+    padding: 10px;
+}
+
+.my-work .projects {
+    flex:wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+h3:hover{
+    font-weight: 400;
+}
+
 #chrisimage {
     max-width: 100px;
     max-height: 100px;
@@ -69,3 +154,56 @@ li {
     border-color: var(--fontcolor);
     border: 1px solid;
 }
+
+
+#contact {
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#phone {
+    padding: 2px;
+    margin: 20px;
+    border-bottom: 2px solid var(--fontcolor);
+
+}
+
+#email{
+    padding: 2px;
+    margin: 20px;
+    border-bottom: 2px solid var(--fontcolor);
+    max-width: 165.625px;
+}
+
+#github{
+    padding: 2px;
+    margin: 20px;
+    border-bottom: 2px solid var(--fontcolor);
+    max-width: 46.047px;
+}
+
+#linkedin{
+    padding: 2px;
+    margin: 20px;
+    border-bottom: 2px solid var(--fontcolor);
+    max-width: 55.234px;
+    
+}
+
+nav a:hover {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+      width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex: 0 0 50%;
+      flex-direction: column;
+      max-width: 50%;
+    }
