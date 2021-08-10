@@ -40,6 +40,10 @@ footer{
     background-color: var(--headercolor);
     border-color: var(--fontcolor);
     border-top: 3px solid;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
 }
 
 h1 {
