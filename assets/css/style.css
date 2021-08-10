@@ -4,6 +4,11 @@
     --fontcolor: #1A1A1A;
 }
 
+*{
+    margin:0;
+    padding: 0;
+}
+
 body {
     color: var(--fontcolor);
     font-family: helvetica neue;
@@ -16,19 +21,15 @@ header {
     border-color: var(--fontcolor);
     border-bottom: 3px solid;
     z-index: 1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 main {
     background-color: var(--backgroundcolor);
+    margin-right: 20px;
 }
 
-aside{
-    display: flex; 
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
 footer{
     height: 100px;
@@ -134,7 +135,7 @@ li {
     flex:wrap;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items:flex-start;
 }
@@ -159,6 +160,25 @@ h3:hover{
     border: 1px solid;
 }
 
+.projects img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: var(--headercolor);
+    align-self: flex-end;
+
+}
+
+#project1:hover {
+    opacity: 75%;
+
+}
+
+#project1{
+    width: 400px;
+    height: 400px;
+    align-self: flex-start;
+}
 
 #contact {
     align-items: flex-start;
@@ -203,11 +223,11 @@ nav a:hover {
 @media screen and (max-width: 992px) {
     header {
       width: 75%;
-}
+}}
 
 @media screen and (max-width: 768px) {
     main {
       flex: 0 0 50%;
       flex-direction: column;
       max-width: 50%;
-    }
+    }}
