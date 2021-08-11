@@ -16,6 +16,7 @@ body {
     /* #F4F4F4 */
 
 }
+
 header {
     background-color: var(--headercolor);
     border-color: var(--fontcolor);
@@ -32,10 +33,9 @@ main {
 
 
 footer{
-    height: 100px;
+    height: 50px;
     display: flex;
     flex-direction: row;
-    flex-wrap:column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--headercolor);
@@ -59,7 +59,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
 }
 .nav {
     width: 100%;
@@ -99,6 +99,7 @@ li {
 
 .about-me {
     height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -116,8 +117,11 @@ li {
     flex: wrap;
 }
 
+
+
 .my-work {
     height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -137,7 +141,7 @@ li {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items:center;
 }
 
 .contactinfo {
@@ -161,29 +165,47 @@ h3:hover{
 }
 
 .projects img{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
-    border-color: var(--headercolor);
     align-self: flex-end;
-
-}
-
-#project1:hover {
-    opacity: 75%;
+    margin:5px;
 
 }
 
 #project1{
-    width: 400px;
-    height: 400px;
-    align-self: flex-start;
+    width: 710px;
+    height: auto;
+}
+
+#project1:hover {
+    opacity: 75%;
+}
+
+#project2:hover {
+    opacity: 75%;
+}
+
+#project3:hover {
+    opacity: 75%;
+
+}
+
+#project4:hover {
+    opacity: 75%;
+
+}
+
+#project5:hover {
+    opacity: 75%;
+
 }
 
 #contact {
     align-items: flex-start;
     margin: 10px;
     padding: 10px;
+    font-size: 13px;
 
 }
 
@@ -221,13 +243,27 @@ nav a:hover {
 }
 
 @media screen and (max-width: 992px) {
-    header {
-      width: 75%;
-}}
-
-@media screen and (max-width: 768px) {
-    main {
-      flex: 0 0 50%;
-      flex-direction: column;
-      max-width: 50%;
-    }}
+    * {
+        flex-direction: column;
+      
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+        flex-direction: column;    
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .my-work{
+        flex-direction: column;
+    }
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+  }
+  
