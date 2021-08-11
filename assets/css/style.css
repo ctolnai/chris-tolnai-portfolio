@@ -24,6 +24,7 @@ header {
     z-index: 1;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 main {
