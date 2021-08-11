@@ -61,6 +61,10 @@ h3 {
     font-weight: 300;
     font-size: 14px;
 }
+
+p{
+    font-size: 20px;
+}
 .nav {
     width: 100%;
     background-color:var(--headercolor);
@@ -83,9 +87,7 @@ h3 {
     line-height: 2;
     font-size: 125%;
     position: relative;
-    right: 50px;
     width: 150px;
-
 }
 
 a {
@@ -103,8 +105,9 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items:flex-start;
+    padding-top: 10px;
 }
 
 .about-me h2 {
@@ -112,12 +115,6 @@ li {
     margin:10px;
     padding: 10px;
 }
-
-.about-me p {
-    flex: wrap;
-}
-
-
 
 .my-work {
     height: 200px;
@@ -133,6 +130,8 @@ li {
     width: 200px;
     margin:10px;
     padding: 10px;
+    position: relative;
+    margin-top: -25px;
 }
 
 .my-work .projects {
@@ -173,12 +172,27 @@ h3:hover{
 
 }
 
+.label1{
+    font-size: 24px;
+    color:var(--backgroundcolor);
+    position: relative;
+    margin-bottom: -75px;
+    margin-left: 30px;
+    z-index: 1;
+    border-radius: 5px;
+    border-color: var(--fontcolor);
+    border: 1px solid;
+    padding: 5px;
+    width:165px;
+}
+
+
 #project1{
     width: 710px;
     height: auto;
 }
 
-#project1:hover {
+#project1:hover{
     opacity: 75%;
 }
 
@@ -188,17 +202,14 @@ h3:hover{
 
 #project3:hover {
     opacity: 75%;
-
 }
 
 #project4:hover {
     opacity: 75%;
-
 }
 
 #project5:hover {
     opacity: 75%;
-
 }
 
 #contact {
@@ -242,12 +253,18 @@ nav a:hover {
     font-weight: 400;
 }
 
+
+
 @media screen and (max-width: 992px) {
     * {
-        flex-direction: column;
-      
+        flex-direction: column; 
     }
-  }
+    p{
+        flex:nowrap;
+    }
+
+}
+
   
   
   @media screen and (max-width: 768px) {
