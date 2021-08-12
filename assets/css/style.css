@@ -118,7 +118,7 @@ li {
 }
 
 .my-work {
-    height: 200px;
+    height: 160vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -170,10 +170,11 @@ h3:hover{
     border-radius: 10px;
     align-self: flex-end;
     margin:5px;
+    
 
 }
 
-.label1{
+.project1 p{
     font-size: 24px;
     color:var(--backgroundcolor);
     position: relative;
@@ -185,17 +186,37 @@ h3:hover{
     border: 1px solid;
     padding: 5px;
     width:165px;
+    /* color: rgba(244, 244, 244, 0) */
 }
 
 
 #project1{
     width: 710px;
     height: auto;
+    
 }
 
-#project1:hover{
+/* .project1 p:hover{
+  
+  animation: show 5s infinite;
+} */
+
+/* @keyframes show {
+    0%{opacity: 0%;
+    margin-left: 0%;}
+    100%{opacity: 100%;
+    margin-left: 50%;}
+} */
+
+.project1:hover{
+    color: #ffffff;
     opacity: 75%;
 }
+
+/* .project1:hover{
+    opacity: 75%;
+
+} */
 
 #project2:hover {
     opacity: 75%;
