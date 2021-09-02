@@ -9,7 +9,7 @@ This page was created using only html and CSS.
 
 Screenshot of the page:
 
-<img src = "assets/images/screenshot-desktop.png">
+<img src = "assets/images/screenshotdesktop.png">
 
 ## License and copyright
 
