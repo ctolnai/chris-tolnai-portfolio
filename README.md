@@ -10,3 +10,9 @@ This page was created using only html and CSS.
 Screenshot of the page:
 
 <img src = "assets/images/screenshot-desktop.png">
+
+## License and copyright
+
+(c) Chris Tolnai 
+
+Licensed under the [MIT License](LICENSE).
