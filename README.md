@@ -12,7 +12,6 @@ https://ctolnai.github.io/chris-tolnai-portfolio/
 
 https://github.com/ctolnai/chris-tolnai-portfolio/
 
-<img src = "assets/images/screenshotdesktop.png">
 
 ## License and copyright
 
